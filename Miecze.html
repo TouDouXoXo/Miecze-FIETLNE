@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>miecze ŚFIETLNE</title>
+        <link rel="stylesheet" href="Miecze.css">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Signika:wght@300;400;700&display=swap" rel="stylesheet">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div>
+            <div class="lightsaber_normal" style="display: none;">
+                <div class="saber"></div>
+                <div class="uchwyt" style="margin-bottom: 3vh;">
+                    <div class="uchwyt">
+                        <div style="width: 2.5vh; height: 2.5vh; background: #383838; margin: 0 auto; border-radius: 2px;"></div>
+                        <div style="width: 2vh; height: 4vh; background: #535353; margin: 0 auto; border-radius: 0px;"></div>
+                        <div style="width: 2.5vh; height: 2.5vh; background: #383838; margin: 0 auto; border-radius: 2px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lightsaber_cross" >
+                <div class="saber"></div>
+                <div class="uchwyt" style="margin-bottom: 3vh;">
+                    <div class="uchwyt">
+                        <div style="width: 2.5vh; height: 2.5vh; background: #383838; margin: 0 auto; border-radius: 2px 2px 0 0;"></div>
+                        <span style="height: 2.5vh; display: flex;">
+                            <div class="saber" style="height: 2vh; margin: .25vh 0 0 auto; width: 8vh; border-radius: 10px 0 0 10px;"></div>
+                            <div style="width: 4vh !important; height: 2.5vh; background: #444444; margin: 0; border-radius: 2px;"></div>
+                            <div class="saber" style="height: 2vh; margin: .25vh auto 0 0; width: 8vh; border-radius: 0 10px 10px 0;"></div>
+                        </span>
+                        <div style="width: 2vh; height: 4vh; background: #535353; margin: 0 auto; border-radius: 0px;"></div>
+                        <div style="width: 2.5vh; height: 2.5vh; background: #383838; margin: 0 auto; border-radius: 2px;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="lightsaber_double" style="display: none;">
+                <span style="height: 2.5vh; display: flex; margin: 10vh 0;">
+                    <div class="saber" style="height: 2vh; width: 30vh !important; margin: .25vh 0 0 auto; width: 8vh; border-radius: 10px 0 0 10px;"></div>
+                    <div style="width: 2.5vh; height: 2.5vh; background: #383838; margin: 0; border-radius: 2px;"></div>
+                    <div style="width: 5vh; height: 2vh; background: #444444; margin: .25vh 0 0 0; border-radius: 0px;"></div>
+                    <div style="width: 2.5vh; height: 2.5vh; background: #383838; margin: 0; border-radius: 2px;"></div>
+                    <div class="saber" style="height: 2vh; width: 30vh !important; margin: .25vh auto 0 0; width: 8vh; border-radius: 0 10px 10px 0;"></div>
+                </span>
+            </div>
+
+            <h2>Kolor</h2>
+            <div class="toggle" id="color"></div>
+            <h2>Kształt</h2>
+            <div class="toggle" id="toggle">
+                <input type="radio" name="type_radio" value="saber_0" class="type_radio" id="type_0" saber_type = "normal" checked/>
+                <label for="type_0">Normalny</label>
+                <input type="radio" name="type_radio" value="saber_1" class="type_radio" id="type_1" saber_type = "cross"/>
+                <label for="type_1">Cross</label>
+                <input type="radio" name="type_radio" value="saber_2" class="type_radio" id="type_2" saber_type = "double"/>
+                <label for="type_2">Podwójny</label>
+            </div>
+        </div>
+    </body>
+</html>
